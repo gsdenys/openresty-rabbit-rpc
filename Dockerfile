@@ -9,5 +9,7 @@ COPY default.conf /etc/nginx/conf.d/default.conf
 
 RUN luarocks install uuid
 RUN luarocks install amqp-client
+RUN luarocks install luasocket
+RUN luarocks install cqueues
 
-EXPOSE 80
+EXPOSE 80 
